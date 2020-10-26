@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "265570382200",
+    "firebase_url": "https://dbhs-f4878.firebaseio.com",
+    "project_id": "dbhs-f4878",
+    "storage_bucket": "dbhs-f4878.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265570382200:android:563610cd308a276cf2988d",
+        "android_client_info": {
+          "package_name": "com.integro.dbhs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265570382200-updr5sc5lcc4lt2mbg8h1k6fv416laf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLyqQPc7Z7TBuBISes3Q6iEODTfFEFjBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265570382200-updr5sc5lcc4lt2mbg8h1k6fv416laf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

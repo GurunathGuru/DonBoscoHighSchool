@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#A0DBF8"
+            android:padding="20dp"
+            android:src="@drawable/log034" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:background="@color/colorBlue2"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#BEC1C3"
+                    android:padding="5sp"
+                    android:src="@drawable/timetable1" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/amiri_regular"
+                    android:gravity="start|center"
+                    android:onClick="getYearPlanner"
+                    android:paddingLeft="10sp"
+                    android:text="YEAR PLANNER"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:background="@color/colorBlue"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#96C5D8"
+                    android:src="@drawable/about_us" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/amiri_regular"
+                    android:gravity="start|center"
+                    android:onClick="getRhapsody"
+                    android:paddingLeft="10sp"
+                    android:text="RHAPSODY"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:background="@color/colorBlue3"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#929F9E"
+                    android:padding="5sp"
+                    android:src="@drawable/alumni" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/amiri_regular"
+                    android:gravity="start|center"
+                    android:onClick="getAlumni"
+                    android:paddingLeft="10sp"
+                    android:text="ALUMNI"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:background="@color/colorBlue1"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#5D6C78"
+                    android:src="@drawable/facilities" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/amiri_regular"
+                    android:gravity="start|center"
+                    android:onClick="getSupportUs"
+                    android:paddingLeft="10sp"
+                    android:text="YOUR SUPPORT"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/cardview_dark_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1">
+
+        <com.github.demono.AutoScrollViewPager
+            android:id="@+id/vpCoverPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:background="@color/colorBlue2"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#B4D8EC"
+                    android:src="@drawable/ic_announcements2" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/amiri_regular"
+                    android:gravity="center|start"
+                    android:onClick="getAnnouncements"
+                    android:paddingLeft="10dp"
+                    android:text="ANNOUNCEMENTS"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:background="#378dbe"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#87B1CA"
+                    android:padding="5sp"
+                    android:src="@drawable/timetable1" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/amiri_regular"
+                    android:gravity="center|start"
+                    android:onClick="getUpcomingEvents"
+                    android:paddingLeft="10dp"
+                    android:text="EVENTS"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8e9ead"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:gravity="center"
+                android:onClick="getKindergarten"
+                android:layout_weight="1"
+                android:src="@drawable/logo121"
+                android:paddingTop="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/amiri_regular"
+                android:gravity="center"
+                android:onClick="getKindergarten"
+                android:text="ST.DOMINIC SAVIO \n KINDERGARTEN"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFCD6"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/amiri_regular"
+                android:gravity="center"
+                android:onClick="getE_Learning"
+                android:text="E-LEARNING"
+                android:textColor="#FF1100"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

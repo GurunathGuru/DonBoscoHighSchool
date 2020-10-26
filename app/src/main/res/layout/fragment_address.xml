@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="25sp"
+    android:gravity="center|start"
+    android:layout_height="match_parent"
+    tools:context=".WebActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15sp"
+        android:fontFamily="@font/amiri_regular"
+        android:gravity="center|start"
+        android:text="Don Bosco High School,
+Panjim Goa 403001"
+        android:textSize="20sp"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:id="@+id/llCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start|center"
+        android:layout_marginBottom="15sp">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_marginTop="5sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_call" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:paddingLeft="10sp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/amiri_regular"
+        android:textSize="20sp"
+        android:text="0832 2422854"
+        android:textColor="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="5sp"
+            android:src="@drawable/ic_email" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/amiri_regular"
+        android:gravity="center|start"
+        android:paddingLeft="10sp"
+        android:textSize="20sp"
+        android:text="dboscopanjim@yahoo.co.in"
+        android:textColor="#000" />
+
+
+    </LinearLayout>
+</LinearLayout>

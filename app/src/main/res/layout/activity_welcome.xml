@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:src="@drawable/log034" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/amiri_regular"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:text="Don Bosco High School,\nPanjim Goa 403001"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfairdisplay_regular"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="dboscopanjim@yahoo.co.in"
+        android:textColor="#BFC2A5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiri_regular"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="0832 2422854"
+        android:textColor="#000" />
+
+</LinearLayout>
