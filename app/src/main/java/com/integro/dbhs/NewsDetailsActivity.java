@@ -15,7 +15,6 @@ import java.util.ArrayList;
 
 public class NewsDetailsActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

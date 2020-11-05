@@ -52,6 +52,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         if (remoteMessage.getData().size() > 0) {
             Log.d(TAG, "Message_data: " + remoteMessage.getData());
         }
+        sendNotification(remoteMessage.getData());
     }
 
     private void sendNotification(Map<String, String> data) {
@@ -77,6 +78,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 intent.putExtra("data", "" + data);
                 intent.putExtra(TYPE, NEWS_KEY);
             }
+
             if (type == 2) {
                 UpcomingEvents events = new Gson().fromJson(body, UpcomingEvents.class);
                 title = events.getTitle();
@@ -96,6 +98,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 intent.putExtra("data", "" + data);
                 intent.putExtra(TYPE, NOTIFICATION_KEY);
             }
+
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -133,6 +136,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
             NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(this);
             notificationManagerCompat.notify(Integer.parseInt("001"), mBuilder.build());
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -147,6 +151,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             InputStream input = connection.getInputStream();
             Bitmap myBitmap = BitmapFactory.decodeStream(input);
             return myBitmap;
+
         } catch (IOException e) {
             e.printStackTrace();
             return null;

@@ -55,7 +55,9 @@ public class AnnouncementAdapter extends RecyclerView.Adapter<AnnouncementAdapte
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tvTitle, tvDate, tvDescription;
+        TextView tvTitle,
+                 tvDate,
+                 tvDescription;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

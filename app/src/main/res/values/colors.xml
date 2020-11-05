@@ -7,12 +7,11 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlue">#00ABF0</color>
     <color name="colorYellow">#E4F5EB3D</color>
+    <color name="colorCream">#FFFCD6</color>
 
     <color name="colorBlue1">#063559</color>
     <color name="colorBlue2">#86B2CA</color>
     <color name="colorBlue3">#abaaac</color>
-    <color name="colorBlue5">#BDC8D8</color>
-    <color name="colorBlue6">#5E7B8D</color>
 
 
 </resources>

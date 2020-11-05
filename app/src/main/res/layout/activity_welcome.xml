@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".WelcomeActivity">
 
     <ImageView
-        android:layout_width="250sp"
-        android:layout_height="250sp"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
         android:src="@drawable/log034" />
 
     <TextView
@@ -18,26 +18,29 @@
         android:layout_marginTop="25dp"
         android:fontFamily="@font/amiri_regular"
         android:gravity="center"
-        android:textSize="35sp"
         android:text="Don Bosco High School,\nPanjim Goa 403001"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp"
+        android:visibility="gone" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/playfairdisplay_regular"
         android:gravity="center"
-        android:textSize="20sp"
         android:text="dboscopanjim@yahoo.co.in"
-        android:textColor="#BFC2A5" />
+        android:textColor="#BFC2A5"
+        android:textSize="20sp"
+        android:visibility="gone" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/amiri_regular"
         android:gravity="center"
-        android:textSize="20sp"
         android:text="0832 2422854"
-        android:textColor="#000" />
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:visibility="gone" />
 
 </LinearLayout>

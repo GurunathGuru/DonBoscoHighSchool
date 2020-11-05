@@ -4,29 +4,24 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
-import com.integro.dbhs.MainActivity;
 import com.integro.dbhs.R;
 
 public class AddressFragment extends Fragment {
-
-    LinearLayout llCall, llEmail;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_address, container, false);
 
-        llCall = view.findViewById(R.id.llCall);
-        llEmail = view.findViewById(R.id.llEmail);
+        LinearLayout llCall = view.findViewById(R.id.llCall);
+        LinearLayout llEmail = view.findViewById(R.id.llEmail);
 
         llEmail.setOnClickListener(new View.OnClickListener() {
             @Override

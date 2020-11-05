@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import com.integro.dbhs.fragments.HomeFragment;
 import com.integro.dbhs.fragments.NewsFragment;
 import com.integro.dbhs.fragments.NotificationsFragment;
-import com.integro.dbhs.fragments.AddressFragment;
 
 public class SlideAdapter extends FragmentPagerAdapter {
 
@@ -29,14 +28,14 @@ public class SlideAdapter extends FragmentPagerAdapter {
         if (i == 2) {
             fragment = new NotificationsFragment();
         }
-        if (i == 3) {
+       /* if (i == 3) {
             fragment = new AddressFragment();
-        }
+        }*/
         return fragment;
     }
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 }

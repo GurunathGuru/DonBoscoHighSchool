@@ -8,7 +8,7 @@ android {
         applicationId "com.integro.dbhs"
         minSdkVersion 17
         targetSdkVersion 29
-        versionCode 13
+        versionCode 16
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

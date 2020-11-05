@@ -16,6 +16,7 @@ public class WebActivity extends AppCompatActivity {
     private WebView webView;
     private ProgressBar progressBar;
     String url;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

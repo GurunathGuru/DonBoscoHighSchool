@@ -37,20 +37,9 @@ public class HomeFragment extends Fragment {
     private ArrayList<CoverPhotos> coverPhotosArrayList;
     private CoverPhotosAdapter adapter;
 
-    ArrayList<Videos> videosArrayList;
-    Call<VideosList> videosListCall;
-
-
-    private ApiServices apiServices;
-    public static final String API_KEY = "AIzaSyDKr5dvZ9VzDcBcTn5kdM_0MOOAbq6uzJU";
-    public static final String VIDEO_ID = "kzNdT3Jj3jk";
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-
-        apiServices = ApiClients.getClients().create(ApiServices.class);
-        videosArrayList = new ArrayList<>();
 
         viewPager = view.findViewById(R.id.vpCoverPhotos);
         coverPhotosArrayList = new ArrayList<>();
@@ -110,6 +99,4 @@ public class HomeFragment extends Fragment {
         testIntent.setData(data);
         startActivity(testIntent);
     }
-
-
 }

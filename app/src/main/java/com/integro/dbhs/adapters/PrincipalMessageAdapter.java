@@ -51,7 +51,8 @@ public class PrincipalMessageAdapter extends RecyclerView.Adapter<PrincipalMessa
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView ivImage;
-        TextView tvTitle, tvDescription;
+        TextView tvTitle,
+                tvDescription;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
