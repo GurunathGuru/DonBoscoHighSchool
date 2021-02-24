@@ -118,13 +118,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void getE_Learning(View view) {
-        Intent intent = new Intent(getApplicationContext(), WebActivity.class);
-        intent.putExtra("URL", "http://e-learning.dbhspanjim.com/");
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-    }
-
     public void getUpcomingEvents(View view) {
         Intent intent = new Intent(getApplicationContext(), UpcomingEventsActivity.class);
         startActivity(intent);
@@ -135,16 +128,23 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void getE_Learning(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://e-learning.dbhspanjim.com/"));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
     public void getAnnouncements(View view) {
         Intent intent = new Intent(getApplicationContext(), WebActivity.class);
-        intent.putExtra("URL", "http://www.dbhspanjim.com/announcement.php");
+        intent.putExtra("URL", "http://www.dbhspanjim.edu.in/announcement.php");
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
     public void getYearPlanner(View view) {
         Intent intent = new Intent(getApplicationContext(), WebActivity.class);
-        intent.putExtra("URL", "http://www.dbhspanjim.com/year_planner.php");
+        intent.putExtra("URL", "http://www.dbhspanjim.edu.in/year_planner.php");
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getAlumni(View view) {
         Intent intent = new Intent(getApplicationContext(), WebActivity.class);
-        intent.putExtra("URL", "http://www.dbhspanjim.com/alumni.php");
+        intent.putExtra("URL", "http://www.dbhspanjim.edu.in/alumni.php");
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
@@ -207,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getSupportUs(View view) {
         Intent intent = new Intent(getApplicationContext(), WebActivity.class);
-        intent.putExtra("URL", "http://www.dbhspanjim.com/support.php");
+        intent.putExtra("URL", "http://www.dbhspanjim.edu.in/support.php");
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

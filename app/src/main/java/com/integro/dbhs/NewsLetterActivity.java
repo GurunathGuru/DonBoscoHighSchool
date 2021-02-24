@@ -24,7 +24,6 @@ public class NewsLetterActivity extends AppCompatActivity {
     private ArrayList<NewsLetter> newsLetterArrayList;
     private NewsLetterAdapter adapter;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
